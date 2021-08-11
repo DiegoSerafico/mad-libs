@@ -5,3 +5,23 @@
 body {
   background-color: bisque;
 }
+
+.btn {
+  display: block;
+  background-color: rgb(231, 127, 127);
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+label {
+  color: rgb(255, 0, 0);
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.jumbotron {
+  background-color: rgb(221, 132, 149);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
