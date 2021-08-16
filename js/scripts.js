@@ -12,17 +12,25 @@ $(document).ready(function() {
     const adjective4Input = $("input#adjective4").val();
     const adjective5Input = $("input#adjective5").val();
 
-    $(".person1").text(person1Input);
-    $(".silly-word").text(sillyWordInput);
-    $(".number").text(numberInput);
-    $(".adjective1").text(adjective1Input);
-    $(".noun1").text(noun1Input);
-    $(".adjective2").text(adjective2Input);
-    $(".relative").text(relativeInput);
-    $(".adjective3").text(adjective3Input);
-    $(".verb").text(verbInput);
-    $(".adjective4").text(adjective4Input);
-    $(".adjective5").text(adjective5Input);
+    const fields = [person1Input, sillyWordInput, numberInput, adjective1Input, noun1Input, adjective2Input, relativeInput, adjective3Input, verbInput, adjective4Input, adjective5Input];
+
+    let i = 0;
+    fields.forEach(function (field) {
+      i++;
+      $(".span" + i).text(field);
+    });
+
+    // $(".person1").text(person1Input);
+    // $(".silly-word").text(sillyWordInput);
+    // $(".number").text(numberInput);
+    // $(".adjective1").text(adjective1Input);
+    // $(".noun1").text(noun1Input);
+    // $(".adjective2").text(adjective2Input);
+    // $(".relative").text(relativeInput);
+    // $(".adjective3").text(adjective3Input);
+    // $(".verb").text(verbInput);
+    // $(".adjective4").text(adjective4Input);
+    // $(".adjective5").text(adjective5Input);
 
     $("#story").show();
 
